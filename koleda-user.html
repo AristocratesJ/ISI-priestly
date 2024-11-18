@@ -104,20 +104,23 @@
                     <h1 class="mb-0 ms-3" style="font-size: 2.5rem; color: #fff;">Kolęda 2025</h1>
                 </div>
                 <div class="header-actions">
-                    <button class="btn btn-outline-light btn-lg me-3" data-bs-toggle="modal" data-bs-target="#rescheduleModal">
-                        <i class="fas fa-calendar-alt me-2"></i> Zmień Termin
-                    </button>
-                    <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                        <i class="fas fa-info-circle me-2"></i> SZCZEGÓŁY WIZYTY
-                    </button>
-                </div>
+					<button id="confirm-button" class="btn btn-sm btn-outline-success me-2" title="Zatwierdź">
+						<i class="fas fa-check"></i>
+					</button>
+					<button id="cancel-button" class="btn btn-sm btn-outline-danger me-2" title="Anuluj">
+						<i class="fas fa-times"></i>
+					</button>
+					<button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#detailsModal">
+						<i class="fas fa-info-circle me-2"></i> SZCZEGÓŁY WIZYTY
+					</button>
+				</div>
             </div>
 
             <!-- Visit Status Card -->
             <div class="visit-status-card">
                 <div class="status-header">
                     <h2>Twoja Wizyta Duszpasterska</h2>
-                    <span class="status-badge confirmed">
+                    <span id="status-badge" class="status-badge confirmed">
                         <i class="fas fa-check-circle"></i> Potwierdzona
                     </span>
                 </div>

@@ -226,6 +226,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+	function changeStatus(isConfirmed) {
+        const statusBadge = document.getElementById('status-badge');
+
+        if (isConfirmed) {
+            // Zmiana na "Potwierdzona"
+            statusBadge.innerHTML = '<i class="fas fa-check-circle"></i> Potwierdzona';
+            statusBadge.classList.remove('not-confirmed');
+            statusBadge.classList.add('confirmed');
+        } else {
+            // Zmiana na "Niepotwierdzona"
+            statusBadge.innerHTML = '<i class="fas fa-times-circle"></i> Niepotwierdzona';
+            statusBadge.classList.remove('confirmed');
+            statusBadge.classList.add('not-confirmed');
+        }
+    }
+
+    // Obsługa kliknięć na przyciski
+    document.getElementById('confirm-button').addEventListener('click', () => changeStatus(true));
+    document.getElementById('cancel-button').addEventListener('click', () => changeStatus(false));
+
     window.addEventListener('resize', handleResponsive);
     handleResponsive();
 }); 

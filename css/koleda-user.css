@@ -471,6 +471,11 @@
     font-size: 1.1rem;
 }
 
+.header-actions{
+	margin.left: 1em;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .page-header {
@@ -580,4 +585,10 @@
 .news-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.not-confirmed {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
 }
