@@ -5,11 +5,11 @@
     --text-color: #2c3e50;
     --border-color: #d5d5d5;
     --input-bg: #ffffff;
-    --primary-color: blue; /* Dark red, traditional church color  #8b0000*/
-    --hover-color: #660000;
+    --primary-color: green; /* Dark red, traditional church color  #006400*/
+    --hover-color: #004d00;
     --icon-color: #4a4a4a;
     --accent-gold: #d4af37;
-    --primary-color-rgb: 139, 0, 0;
+    --primary-color-rgb: 0, 100, 0;
 }
 
 [data-theme="dark"] {
@@ -18,11 +18,11 @@
     --text-color: #e0e0e0;
     --border-color: #404040;
     --input-bg: #333333;
-    --primary-color: #a83232;
-    --hover-color: #8b0000;
+    --primary-color: #228B22;
+    --hover-color: #006400;
     --icon-color: #b0b0b0;
     --accent-gold: #bf9b30;
-    --primary-color-rgb: 168, 50, 50;
+    --primary-color-rgb: 34, 139, 34;
 }
 
 body {

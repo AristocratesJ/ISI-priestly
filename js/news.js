@@ -48,14 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Read more buttons
-    const readMoreBtns = document.querySelectorAll('.btn-outline-primary');
-    readMoreBtns.forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('Pełna treść artykułu będzie dostępna wkrótce!');
-        });
-    });
 
     // Simulate real-time updates
     function updateViewCount() {
