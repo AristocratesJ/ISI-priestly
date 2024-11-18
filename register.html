@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriestyLy - Rejestracja</title>
+    
+    <!-- Same head content as login.html -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Same header as login.html -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-church"></i> PriestyLy
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#parafiaMenu" role="button">
+                                <i class="fas fa-church"></i> Parafia
+                            </a>
+                            <div class="collapse nav-collapse" id="parafiaMenu">
+                                <a href="news.html" class="nav-sublink"><i class="fas fa-newspaper"></i> Aktualności</a>
+                                <a href="archive.html" class="nav-sublink"><i class="fas fa-archive"></i> Archiwum Mszy</a>
+                                <a href="intentions.html" class="nav-sublink"><i class="fas fa-pray"></i> Intencje Mszalne</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#wspolnotaMenu" role="button">
+                                <i class="fas fa-users"></i> Wspólnota
+                            </a>
+                            <div class="collapse nav-collapse" id="wspolnotaMenu">
+                                <a href="groups.html" class="nav-sublink"><i class="fas fa-user-friends"></i> Grupy Parafialne</a>
+                                <a href="events.html" class="nav-sublink"><i class="fas fa-calendar-alt"></i> Wydarzenia</a>
+                                <a href="chat.html" class="nav-sublink"><i class="fas fa-comments"></i> Chat</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#wsparcieMenu" role="button">
+                                <i class="fas fa-hand-holding-heart"></i> Wsparcie
+                            </a>
+                            <div class="collapse nav-collapse" id="wsparcieMenu">
+                                <a href="donations.html" class="nav-sublink"><i class="fas fa-gift"></i> Darowizny</a>
+                                <a href="volunteer.html" class="nav-sublink"><i class="fas fa-hands-helping"></i> Wolontariat</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container position-relative">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </label>
+            </div>
+
+            <div class="container">
+                <div class="login-container">
+                    <div class="login-header text-center">
+                        <div class="logo-wrapper">
+                            <i class="fas fa-cross church-icon"></i>
+                        </div>
+                        <h1>PriestyLy</h1>
+                        <p>Dołącz do cyfrowej wspólnoty parafialnej</p>
+                    </div>
+                    
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label>Typ konta</label>
+                            <div class="account-type-selector mb-3">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="typeBeliever" name="accountType" value="believer" checked>
+                                    <label class="form-check-label" for="typeBeliever">
+                                        <i class="fas fa-pray"></i> Wierny
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="typeCollaborator" name="accountType" value="collaborator">
+                                    <label class="form-check-label" for="typeCollaborator">
+                                        <i class="fas fa-hands-helping"></i> Współpracownik
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="typeWorker" name="accountType" value="worker">
+                                    <label class="form-check-label" for="typeWorker">
+                                        <i class="fas fa-church"></i> Pracownik Kościoła
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="firstName">Imię</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lastName">Nazwisko</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Adres e-mail</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="parish">Parafia</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-church"></i>
+                                </span>
+                                <select class="form-control" id="parish" required>
+                                    <option value="">Wybierz parafię...</option>
+                                    <option value="locate">📍 Znajdź najbliższą parafię</option>
+                                    <option value="1">Parafia św. Wojciecha</option>
+                                    <option value="2">Parafia NMP Królowej Polski</option>
+                                    <option value="3">Parafia św. Jana Pawła II</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Hasło</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <small class="form-text text-muted">Minimum 8 znaków</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword">Potwierdź hasło</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                                <input type="password" class="form-control" id="confirmPassword" required>
+                            </div>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="terms" required>
+                            <label class="form-check-label" for="terms">
+                                Akceptuję <a href="#">regulamin</a> i <a href="#">politykę prywatności</a>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Zarejestruj się</button>
+                    </form>
+
+                    <div class="login-footer text-center">
+                        <p>Masz już konto? <a href="login.html">Zaloguj się</a></p>
+                    </div>
+
+                    <div class="daily-verse">
+                        <i class="fas fa-book-bible"></i>
+                        <p class="verse-text">"Pozwólcie dzieciom przychodzić do Mnie"</p>
+                        <p class="verse-source">- Ewangelia wg św. Marka 10:14</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Same footer as login.html -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>O Projekcie</h5>
+                    <p>PriestyLy to platforma łącząca parafie z wiernymi, umożliwiająca:</p>
+                    <ul>
+                        <li>Zarządzanie aktualnościami parafialnymi</li>
+                        <li>Komunikację między wiernymi a duchownymi</li>
+                        <li>Organizację wydarzeń i grup parafialnych</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Szybki Dostęp</h5>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-calendar-alt"></i> Wydarzenia</a></li>
+                        <li><a href="#"><i class="fas fa-users"></i> Grupy Parafialne</a></li>
+                        <li><a href="#"><i class="fas fa-hand-holding-heart"></i> Wsparcie Parafii</a></li>
+                        <li><a href="#"><i class="fas fa-pray"></i> Intencje Mszalne</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Kontakt</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> kontakt@priestly.pl</li>
+                        <li><i class="fas fa-phone"></i> +48 123 456 789</li>
+                        <li><i class="fas fa-headset"></i> Wsparcie techniczne dostępne 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PriestyLy. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/register.js"></script>
+</body>
+</html> 

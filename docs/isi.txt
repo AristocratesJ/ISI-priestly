@@ -1,0 +1,185 @@
+User Stories
+Pracownicy Kościoła
+Case: Jako Pracownik Kościła chcę móc edytować stronę aktualności
+○ Po co: Aby lepiej szerzyć wiarę, zmniejszyć problemy organizacyjne
+wydarzeń i nawiązać lepszy kontakt z wiernymi.
+○ AC:
+■ Strona parafii jest dostępna tylko dla zalogowanych
+użytkowników.
+■ Użytkownicy niezalogowani widzą treści z najbliższej parafii,
+określoną na podstawie lokalizacji.
+■ Dynamiczne ładowanie ostatnich 10 aktywności.
+■ Możliwość filtrowania treści po datach i paginacja.
+○ Wymagania Niefunkcjonalne:
+■ Wydajność ładowania: Strona powinna ładować się w czasie
+poniżej 2 sekund.
+■ System powinien wykrywać lokalizację użytkowników
+niezalogowanych, zachowując ich prywatność i bezpieczeństwo
+danych.
+■ Skalowalność: System musi obsługiwać dużą liczbę
+użytkowników (np. do 5000 aktywnych użytkowników
+jednocześnie).
+Case: Jako Pracownik Kościoła chcę móc łatwo poznawać indywidualne
+potrzeby wiernych
+○ Po co: Aby skuteczniej adresować potrzeby wiernych, opierając się na
+większej próbie danych, co uczyni Kościół bardziej przyjazną
+instytucją.
+○ AC:
+■ Dostęp do forum i prywatnych wiadomości dla komunikacji
+między wiernymi a pracownikami Kościoła.
+■ Narzędzia masowego przekazu, takie jak ankiety.
+■ Możliwość tworzenia ankiet przez członków parafii.
+■ Wbudowany chat pomiędzy pracownikiem Kościoła a wiernymi z
+możliwością odwołania się do grafików.
+2. 
+○ Wymagania Niefunkcjonalne:
+■ Chat i ankiety muszą być dostępne na urządzeniach mobilnych i
+komputerach.
+■ System powinien zapewniać ochronę prywatności użytkowników
+podczas komunikacji na czacie i w wiadomościach prywatnych.
+3. 4. Case: Jako Pracownik Kościoła chcę móc tworzyć i administrować
+grupami parafialnymi
+○ Po co: Aby znajdować ludzi do pomocy i uczestnictwa w różnych
+eventach parafii.
+○ AC:
+■ Panel umożliwiający nadawanie userom roli "współpracujący
+(nonprofit)".
+■ Dostęp do ogólnego oraz prywatnych chatów dla rozmowy z
+userami.
+■ Możliwość tworzenia ankiet i dodawania ogłoszeń w grupach
+parafialnych.
+○ Wymagania Niefunkcjonalne:
+■ Wydajność: Zmiany w panelu administracyjnym powinny być
+widoczne w czasie rzeczywistym.
+■ Bezpieczeństwo: Dostęp do panelu administracyjnego tylko dla
+uprawnionych pracowników Kościoła.
+Case: Jako Pracownik Kościoła chcę móc skutecznie planować swój
+grafik
+○ Po co: Aby minimalizować koszty operacyjne, lepiej zarządzać
+czasem, dotrzeć do większej liczby osób i zapobiec wypaleniu.
+○ AC:
+■ Mapa z zoptymalizowaną trasą wizyt indywidualnych z
+godzinowym harmonogramem.
+■ Udostępnianie części grafiku wiernym, aby mogli znaleźć wolny
+termin.
+■ Automatyczne planowanie corocznych zadań (np. rekolekcje,
+msze, różańce) z uwzględnieniem innych użytkowników
+systemu.
+○ Wymagania Niefunkcjonalne:
+■ Wydajność: Optymalizacja trasy powinna trwać mniej niż 5
+sekund.
+■ Integracja: System powinien być zintegrowany z kalendarzem,
+by automatycznie uwzględniać zajęte terminy innych
+pracowników.
+Osoby współpracujące z Kościołem (non-profit)
+1. 2. Case: Jako współpracujący z kościołem chcę mieć prosty kontakt z
+członkami swoich grup
+○ Po co: Aby ułatwić zarządzanie grupami i zwiększyć integrację między
+członkami.
+○ AC:
+■ Narzędzia komunikacyjne (grupowe wiadomości, chaty).
+■ Możliwość zarządzania grupami z listą członków i przypisanymi
+zadaniami.
+■ Powiadomienia o aktualizacjach i spotkaniach grupowych.
+○ Wymagania Niefunkcjonalne:
+■ Powiadomienia muszą być wysyłane w czasie rzeczywistym.
+■ Dostępność: System komunikacyjny musi działać na różnych
+urządzeniach (komputer, telefon).
+Case: Jako współpracujący z kościołem chcę móc przechowywać i
+wyświetlać w jednym miejscu medialne treści grupy
+○ Po co: Aby uprościć proces współdzielenia danych, na przykład
+wyświetlanie psalmów podczas mszy.
+○ AC:
+■ Współdzielona biblioteka multimediów dla grupy, dostępna
+online.
+■ Obsługa wyświetlania treści multimedialnych (np. psalmów,
+grafik) na żywo podczas wydarzeń.
+■ Możliwość udostępniania materiałów innym członkom grupy i
+parafii.
+○ Wymagania Niefunkcjonalne:
+■ Skalowalność: Obsługa dużej ilości treści multimedialnych bez
+opóźnień.
+■ Dostępność: Dostęp do biblioteki multimediów na różnych
+urządzeniach, w tym offline w razie braku dostępu do sieci
+podczas wydarzenia.
+Wierzący (zalogowany)
+1. 2. 3. Case: Jako wierzący chcę mieć możliwość zgłaszania się do pomocy
+przy eventach
+○ Po co: Aby wspierać organizatorów w ich zadaniach i odciążyć ich w
+organizacji wydarzeń.
+○ AC:
+■ Formularz do zgłaszania się do pomocy przy nadchodzących
+wydarzeniach.
+■ System powiadomień o nowych eventach wymagających
+wsparcia.
+■ Automatyczne przypisywanie do zadań na podstawie
+umiejętności lub preferencji.
+○ Wymagania Niefunkcjonalne:
+■ Wydajność: Zgłoszenia i przypisania do zadań powinny być
+realizowane w czasie rzeczywistym.
+■ Bezpieczeństwo: System musi chronić dane użytkowników
+zgłaszających się do pomocy.
+Case: Jako wierny chcę móc być członkiem grup parafialnych
+○ Po co: Aby mieć dostęp do kalendarzy i wydarzeń każdej grupy w
+jednym miejscu, a także możliwość zgłaszania chęci do współpracy z
+Kościołem.
+○ AC:
+■ Możliwość przeglądania i dołączania do różnych grup
+parafialnych.
+■ Centralny kalendarz integrujący wydarzenia z wszystkich grup, z
+możliwością filtrowania.
+■ Formularz zgłoszeniowy do podjęcia współpracy z Kościołem.
+○ Wymagania Niefunkcjonalne:
+■ Skalowalność: Obsługa dużej liczby grup i wydarzeń w
+kalendarzu bez spadku wydajności.
+Case: Jako wierny chcę zapisywać się na eventy swoich grup
+parafialnych
+○ Po co: Aby aktywnie uczestniczyć w życiu parafialnym i angażować się
+w wydarzenia.
+○ AC:
+■ Formularze rejestracyjne na kolędę i inne wydarzenia.
+■ Automatyczne przypomnienia o nadchodzących eventach.
+■ Możliwość rezerwacji miejsca i wyboru preferowanych godzin na
+kolędę.
+4. ○ Wymagania Niefunkcjonalne:
+■ Wydajność: Rezerwacja miejsc i przypomnienia powinny działać
+w czasie rzeczywistym.
+Case: Jako wierny chcę łatwo umówić się na kolędę
+○ Po co: Aby uprościć ten proces i zaoszczędzić czas.
+○ AC:
+■ Interaktywny formularz umawiania kolędy z dostępnością
+księdza.
+■ Widok dostępnych terminów z możliwością dopasowania i
+wyboru dogodnego czasu.
+■ Potwierdzenie wizyty i możliwość jej edytowania lub odwołania.
+○ Wymagania Niefunkcjonalne:
+■ Interaktywność: T erminy powinny być aktualizowane w czasie
+rzeczywistym.
+Osoby postronne (niezalogowane)
+11. Case: Jako osoba anonimowa chcę mieć możliwość wpłacania datków
+○ Po co: Aby wspierać finansowo wybraną parafię lub inne cele.
+○ AC:
+■ Możliwość wyboru parafii lub celu na który użytkownik chce
+przeznaczyć darowiznę.
+■ Możliwość wyboru formy płatności (np. przelew, BLIK).
+○ Wymagania Niefunkcjonalne:
+■ Bezpieczeństwo: System musi zapewnić bezpieczne
+przetwarzanie płatności.
+■ Dostępność: Funkcja wpłaty datków dostępna dla osób bez
+konta.
+12. Case: Jako osoba anonimowa chcę mieć dostęp do informacji
+duszpasterskich i archiwalnych mszy
+○ Po co: Aby wiedzieć, co dzieje się w parafii i móc odsłuchać msze,
+nawet jeśli nie było się na miejscu.
+○ AC:
+■ Aktualności duszpasterskie dostępne online z opcją
+powiadomień o najważniejszych wydarzeniach.
+■ Archiwum homilii, ogłoszeń i psalmów do odczytu lub
+odsłuchania.
+■ Możliwość subskrypcji biuletynu parafialnego z cotygodniowym
+podsumowaniem wydarzeń i ogłoszeń.
+○ Wymagania Niefunkcjonalne:
+■ Dostępność: Archiwum dostępne na różnych urządzeniach, w
+tym na urządzeniach mobilnych.
+■ Skalowalność: System musi obsługiwać dużą liczbę
+użytkowników oglądających treści jednocześnie.
