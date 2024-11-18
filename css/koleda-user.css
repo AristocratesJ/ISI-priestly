@@ -487,3 +487,97 @@
         height: 60px;
     }
 } 
+
+
+
+
+
+
+
+
+.news-content {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(135deg, rgba(139,0,0,0.03) 0%, rgba(212,175,55,0.03) 100%);
+}
+
+/* Page Header */
+.page-header {
+    background: var(--container-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+}
+
+.page-header h1 {
+    font-family: 'Cinzel', serif;
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-header h1 i {
+    color: var(--accent-gold);
+}
+
+/* User Profile in Header */
+.parish-badge {
+    background: rgba(var(--primary-color-rgb), 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem !important;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--container-bg);
+}
+
+.user-name {
+    font-weight: 500;
+}
+
+/* News Cards */
+.news-grid {
+    margin-top: 2rem;
+}
+
+.news-card {
+    background: var(--container-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}

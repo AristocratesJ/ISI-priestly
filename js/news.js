@@ -27,15 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Add News button functionality
-    const addNewsBtn = document.querySelector('.btn-primary');
-    if (addNewsBtn) {
-        addNewsBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('Funkcja dodawania ogłoszenia będzie dostępna wkrótce!');
-        });
-    }
-
     // News card hover effects
     const newsCards = document.querySelectorAll('.news-card');
     newsCards.forEach(card => {

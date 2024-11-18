@@ -7,7 +7,7 @@
     
     <!-- Same head content -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/login_green.css">
     <link rel="stylesheet" href="css/koleda-admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <i class="fas fa-church"></i> PriestyLy
+                    <img src="kościół.png" alt="Logo Kościół" class="church-logo" style="max-width: 50px; height: auto;"> Priestly
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <i class="fas fa-bars"></i>
@@ -35,6 +35,7 @@
                                 <a href="news.html" class="nav-sublink"><i class="fas fa-newspaper"></i> Aktualności</a>
                                 <a href="archive.html" class="nav-sublink"><i class="fas fa-archive"></i> Archiwum Mszy</a>
                                 <a href="intentions.html" class="nav-sublink"><i class="fas fa-pray"></i> Intencje Mszalne</a>
+								<a href="koleda-admin.html" class="nav-sublink"><i class="fas fa-cross"></i> Zarządzaj Kolędą</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -64,7 +65,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link user-profile" href="#" data-bs-toggle="dropdown">
                                 <div class="user-avatar">
-                                    <i class="fas fa-user"></i>
+                                    <img src="ksiadz.png" alt="ksiadz" style="max-width: 65px; height: auto; border-radius: 50%;">
                                 </div>
                                 <span class="user-name">ks. Jan Kowalski</span>
                             </a>
@@ -184,39 +185,6 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr data-coords="52.2547,21.0341">
-                                        <td class="text-center"><strong>16:00</strong></td>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <i class="fas fa-map-marker-alt text-danger me-2"></i>
-                                                ul. Targowa 15/17
-                                            </div>
-                                        </td>
-                                        <td>Kowalscy</td>
-                                        <td class="text-center">
-                                            <span class="badge bg-warning">Oczekuje</span>
-                                        </td>
-                                        <td>
-                                            <small class="text-muted">
-                                                <i class="fas fa-info-circle me-1"></i>
-                                                Dzwonek nie działa, proszę pukać
-                                            </small>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex justify-content-center gap-2">
-                                                <button class="btn btn-sm btn-outline-primary" title="Edytuj">
-                                                    <i class="fas fa-edit"></i>
-                                                </button>
-                                                <button class="btn btn-sm btn-outline-success" title="Zatwierdź">
-                                                    <i class="fas fa-check"></i>
-                                                </button>
-                                                <button class="btn btn-sm btn-outline-danger" title="Anuluj">
-                                                    <i class="fas fa-times"></i>
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-
                                     <tr data-coords="52.2563,21.0367">
                                         <td class="text-center"><strong>16:30</strong></td>
                                         <td>
@@ -414,6 +382,39 @@
                                             </div>
                                         </td>
                                     </tr>
+									
+									<tr data-coords="52.2547,21.0341">
+                                        <td class="text-center"><strong>21:37</strong></td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                                                ul. Targowa 15/17
+                                            </div>
+                                        </td>
+                                        <td>Adamczyk</td>
+                                        <td class="text-center">
+                                            <span class="badge bg-warning">Oczekuje</span>
+                                        </td>
+                                        <td>
+                                            <small class="text-muted">
+                                                <i class="fas fa-info-circle me-1"></i>
+                                                Zgubiłem zeszyt od religii
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-center gap-2">
+                                                <button class="btn btn-sm btn-outline-primary" title="Edytuj">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-success" title="Zatwierdź">
+                                                    <i class="fas fa-check"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger" title="Anuluj">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -433,7 +434,8 @@
                             <div class="d-flex">
                                 <div class="ministrant-card-wrapper">
                                     <div class="ministrant-card">
-                                        <img src="https://source.unsplash.com/random/100x100/?boy" alt="Ministrant" class="ministrant-avatar">
+                                        <img src="ministrant.png" alt="Ministrant" class="ministrant-avatar">
+
                                         <div class="ministrant-info">
                                             <div class="ministrant-name">Adam Nowak</div>
                                             <div class="ministrant-stats">
@@ -450,13 +452,13 @@
 
                                 <div class="ministrant-card-wrapper">
                                     <div class="ministrant-card">
-                                        <img src="https://source.unsplash.com/random/100x100/?teenager" alt="Ministrant" class="ministrant-avatar">
+                                        <img src="ministrant2.png" alt="Ministrant" class="ministrant-avatar">
                                         <div class="ministrant-info">
-                                            <div class="ministrant-name">Piotr Kowalski</div>
+                                            <div class="ministrant-name">Hubert Sobociński</div>
                                             <div class="ministrant-stats">
-                                                <span><i class="fas fa-star"></i> 4.5</span>
-                                                <span><i class="fas fa-clock"></i> 8h</span>
-                                                <span><i class="fas fa-coins"></i> 80 zł</span>
+                                                <span><i class="fas fa-star"></i> 5</span>
+                                                <span><i class="fas fa-clock"></i> 37h</span>
+                                                <span><i class="fas fa-coins"></i> 420 zł</span>
                                             </div>
                                         </div>
                                         <div class="ministrant-status pending">
@@ -467,7 +469,7 @@
 
                                 <div class="ministrant-card-wrapper">
                                     <div class="ministrant-card">
-                                        <img src="https://source.unsplash.com/random/100x100/?student" alt="Ministrant" class="ministrant-avatar">
+                                        <img src="ministrant3.png" alt="Ministrant" class="ministrant-avatar">
                                         <div class="ministrant-info">
                                             <div class="ministrant-name">Michał Wiśniewski</div>
                                             <div class="ministrant-stats">
@@ -545,7 +547,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <h5>O Projekcie</h5>
-                    <p>PriestyLy to platforma łącząca parafie z wiernymi, umożliwiająca:</p>
+                    <p>Priestly to platforma łącząca parafie z wiernymi, umożliwiająca:</p>
                     <ul>
                         <li>Zarządzanie aktualnościami parafialnymi</li>
                         <li>Komunikację między wiernymi a duchownymi</li>
@@ -571,7 +573,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 PriestyLy. Wszystkie prawa zastrzeżone.</p>
+                <p>&copy; 2025 Priestly. Wszystkie prawa zastrzeżone.</p>
             </div>
         </div>
     </footer>

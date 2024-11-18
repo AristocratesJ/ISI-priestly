@@ -335,3 +335,174 @@
 [data-theme="dark"] .parish-badge {
     background: rgba(var(--primary-color-rgb), 0.2);
 } 
+
+/* Image Upload Area */
+.image-upload-area {
+    border: 2px dashed var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: var(--input-bg);
+}
+
+.image-upload-area:hover {
+    border-color: var(--primary-color);
+    background: rgba(var(--primary-color-rgb), 0.02);
+}
+
+.upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.upload-label i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+/* Preview Section */
+#imagePreview img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/* Preview Modal */
+.modal-content {
+    background: var(--container-bg);
+    border: 1px solid var(--border-color);
+}
+
+.modal-header {
+    border-bottom-color: var(--border-color);
+}
+
+.modal-title {
+    font-family: 'Cinzel', serif;
+    color: var(--primary-color);
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] .CodeMirror {
+    filter: brightness(0.8);
+}
+
+[data-theme="dark"] .editor-toolbar {
+    background: var(--container-bg);
+}
+
+[data-theme="dark"] .editor-toolbar button {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .editor-toolbar button:hover {
+    background: rgba(var(--primary-color-rgb), 0.2) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .settings-card {
+        position: static;
+        margin-top: 2rem;
+    }
+
+    .editor-card {
+        padding: 1.5rem;
+    }
+
+    .CodeMirror {
+        min-height: 300px !important;
+    }
+
+    .form-control-lg {
+        font-size: 1.5rem;
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* Additional Styles */
+.page-header {
+    margin-bottom: 3rem;
+}
+
+.page-header h1 {
+    font-family: 'Cinzel', serif;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.btn-group-lg > .btn {
+    padding: 1rem 2rem;
+}
+
+/* Form Group Spacing */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+/* Enhanced Select Styles */
+.form-select[multiple] {
+    min-height: 120px;
+}
+
+/* Status Indicators */
+.publish-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(var(--primary-color-rgb), 0.05);
+}
+
+.publish-status i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.action-buttons .btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: inherit;
+} 
