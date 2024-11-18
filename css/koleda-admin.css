@@ -1,0 +1,608 @@
+/* Kolęda Admin Specific Styles */
+.koleda-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: var(--container-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.stat-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(var(--primary-color-rgb), 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--icon-color);
+    font-size: 0.9rem;
+}
+
+/* Map Widget Styles */
+.koleda-map-widget {
+    background: var(--container-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.widget-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.widget-header h2 {
+    font-family: 'Cinzel', serif;
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.widget-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.map-container {
+    height: 600px;
+    position: relative;
+    background: var(--bg-color);
+}
+
+#koleda-map {
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+}
+
+.route-info {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--container-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    min-width: 250px;
+    border: 1px solid var(--border-color);
+    z-index: 1000;
+}
+
+.route-info h4 {
+    font-family: 'Cinzel', serif;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.route-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.route-stat {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.route-stat i {
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--primary-color-rgb), 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.route-stat div {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.stat-label {
+    color: var(--icon-color);
+    font-size: 0.9rem;
+}
+
+/* Custom Map Markers */
+.custom-div-icon {
+    background: none;
+    border: none;
+}
+
+.custom-div-icon i {
+    font-size: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Visit Popup Styles */
+.visit-popup {
+    padding: 0.5rem;
+}
+
+.visit-popup h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel', serif;
+}
+
+.visit-popup p {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.visit-popup i {
+    color: var(--primary-color);
+    width: 16px;
+}
+
+/* Financial Summary Section */
+.financial-summary-section {
+    background: var(--container-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+.financial-summary-section h2 {
+    font-family: 'Cinzel', serif;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.financial-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.financial-stat-card {
+    background: rgba(var(--primary-color-rgb), 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.financial-stat-card .stat-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Loading Indicator */
+.loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--container-bg);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+.loading-indicator i {
+    color: var(--primary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .koleda-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .map-container {
+        height: 400px;
+    }
+
+    .route-info {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 1rem;
+        width: auto;
+    }
+
+    .widget-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .widget-actions {
+        width: 100%;
+    }
+
+    .widget-actions .btn {
+        flex: 1;
+    }
+
+    .financial-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] .stat-icon {
+    background: rgba(var(--primary-color-rgb), 0.2);
+}
+
+[data-theme="dark"] .route-info,
+[data-theme="dark"] .loading-indicator {
+    background: var(--container-bg);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .financial-stat-card {
+    background: rgba(var(--primary-color-rgb), 0.1);
+}
+
+/* Add/update these table styles */
+.table {
+    color: var(--text-color);
+    --bs-table-bg: transparent;
+    --bs-table-hover-bg: rgba(var(--primary-color-rgb), 0.05);
+    margin-bottom: 0;
+}
+
+.table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    padding: 1rem;
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.table td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.table tbody tr {
+    background-color: var(--container-bg);
+}
+
+.table tbody tr:hover {
+    background-color: rgba(var(--primary-color-rgb), 0.05);
+}
+
+/* Dark mode specific table styles */
+[data-theme="dark"] .table {
+    color: var(--text-color);
+    --bs-table-hover-color: var(--text-color);
+}
+
+[data-theme="dark"] .table th {
+    background-color: rgba(var(--primary-color-rgb), 0.2);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .table td {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .table tbody tr {
+    background-color: var(--container-bg);
+}
+
+[data-theme="dark"] .table tbody tr:hover {
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+}
+
+[data-theme="dark"] .table .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+[data-theme="dark"] .table-light {
+    --bs-table-bg: rgba(var(--primary-color-rgb), 0.1);
+    --bs-table-color: var(--text-color);
+    --bs-table-hover-bg: rgba(var(--primary-color-rgb), 0.15);
+    --bs-table-hover-color: var(--text-color);
+}
+
+/* Enhanced schedule section */
+.schedule-section {
+    background: var(--container-bg);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+}
+
+.schedule-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-family: 'Cinzel', serif;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .table-light {
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+}
+
+[data-theme="dark"] .table {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Add/update these styles */
+.page-header {
+    background: var(--container-bg);
+    padding: 2rem 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+}
+
+.page-header h1 {
+    font-family: 'Cinzel', serif;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.btn i {
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.widget-header {
+    padding: 2rem 2.5rem;
+}
+
+.widget-header h2 {
+    font-size: 1.8rem;
+}
+
+.widget-header h2 i {
+    color: var(--accent-gold);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 1.5rem;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Add these styles for horizontal scrolling ministrants */
+.ministrants-scroll {
+    overflow-x: auto;
+    padding: 1rem 0;
+    margin: 0 -1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--border-color);
+}
+
+.ministrants-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.ministrants-scroll::-webkit-scrollbar-track {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+.ministrants-scroll::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.ministrants-scroll .d-flex {
+    padding: 0 1rem;
+    gap: 1.5rem;
+}
+
+.ministrant-card-wrapper {
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.ministrant-card {
+    height: 100%;
+    background: rgba(var(--primary-color-rgb), 0.03);
+    border-radius: 12px;
+    padding: 1.2rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ministrant-card:hover {
+    transform: translateY(-5px);
+    background: rgba(var(--primary-color-rgb), 0.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Update existing ministrant styles */
+.ministrant-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-gold);
+}
+
+.ministrant-status {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.ministrant-status.confirmed {
+    background-color: #198754;
+}
+
+.ministrant-status.pending {
+    background-color: #ffc107;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ministrant-card-wrapper {
+        min-width: 250px;
+    }
+}
+
+/* Dark mode table styles */
+[data-theme="dark"] .table {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .table-light {
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .table td,
+[data-theme="dark"] .table th {
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .table-hover tbody tr:hover {
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+[data-theme="dark"] .btn-outline-primary {
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+[data-theme="dark"] .btn-outline-success {
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .btn-outline-success:hover {
+    background-color: #198754;
+    color: white;
+}
+
+[data-theme="dark"] .btn-outline-danger {
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+} 
